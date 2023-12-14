@@ -24,4 +24,6 @@ export const subtotal = computed($cart, (entries) => {
 
 		subtotal += entry.item.price * entry.quantity;
 	});
+
+	return subtotal;
 });
