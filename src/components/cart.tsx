@@ -14,7 +14,12 @@ const EmptyState = () => {
 	return (
 		<>
 			<p class={styles.icon}>
-				<span role="img" aria-label="hot dog"></span>
+				<span role="img" aria-label="hot dog">
+					🌭
+				</span>
+			</p>
+			<p class={styles.empty}>
+				Your cart is empty! Add a sandwich kit or two and give flavor a chance.
 			</p>
 		</>
 	);
