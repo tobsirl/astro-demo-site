@@ -24,3 +24,7 @@ const EmptyState = () => {
 		</>
 	);
 };
+
+const CheckoutNotice = () => {
+	return <p class={styles.notice}>Checkout is not implemented yet.</p>;
+};
