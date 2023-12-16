@@ -9,3 +9,13 @@ function formatCurrency(amount: number) {
 		currency: 'USD',
 	}).format(amount);
 }
+
+const EmptyState = () => {
+	return (
+		<>
+			<p class={styles.icon}>
+				<span role="img" aria-label="hot dog"></span>
+			</p>
+		</>
+	);
+};
