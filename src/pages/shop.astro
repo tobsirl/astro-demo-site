@@ -12,7 +12,7 @@ import { Cart } from '../components/cart.tsx';
 		</noscript>
 		<div class="products">
 			<ShopItems />
-			<Cart />
+			<Cart client:only="solid-js" />
 		</div>
 	</div>
 </Layout>

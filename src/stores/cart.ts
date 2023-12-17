@@ -2,7 +2,7 @@ import { computed, map } from 'nanostores';
 
 export const $cart = map<Record<number, CartItem>>({});
 
-export function addToCart(item: ShopItem) {
+export function addItemToCart(item: ShopItem) {
 	const cartItem = $cart.get()[item.id];
 	const quantity = cartItem ? cartItem.quantity : 0;
 
