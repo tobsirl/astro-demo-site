@@ -1,12 +1,12 @@
 import { useStore } from '@nanostores/solid';
-import { $cart as cart, removeItemFromCart, subtotal } from '../stores/cart';
-import { Show, createSignal } from 'solid-js';
+import { cart, removeItemFromCart, subtotal } from '../stores/cart';
 import styles from './cart.module.css';
+import { Show, createSignal } from 'solid-js';
 
 function formatCurrency(amount: number) {
 	return new Intl.NumberFormat('en-US', {
+		currency: 'usd',
 		style: 'currency',
-		currency: 'USD',
 	}).format(amount);
 }
 
