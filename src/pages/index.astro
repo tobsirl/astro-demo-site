@@ -2,6 +2,7 @@
 import Layout from '../layouts/default.astro';
 import heroImage from '../assets/sandwich-hero.jpg';
 import ShopItems from '../components/shop-items.astro';
+import newsletterImage from '../assets/newsletter.jpg';
 ---
 
 <html lang="en">
@@ -34,6 +35,20 @@ import ShopItems from '../components/shop-items.astro';
 			<p class="shop-link">
 				<a href="/shop">Shop All Sandwich Kits &rarr;</a>
 			</p>
+		</section>
+		<section class="block newsletter">
+			<img
+				src={newsletterImage.src}
+				alt="a bag with the word “sndwch” superimposed on it"
+			/>
+			<div class="copy">
+				<h3>Prefer your sandwiches to go?</h3>
+				<p>
+					Get the sndwch newsletter to hear what else qualifies as a sandwich
+					first!
+				</p>
+				<a href="/newsletter" class="big-link">Subscribe</a>
+			</div>
 		</section>
 		<style>
 			.hero {
